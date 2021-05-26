@@ -75,6 +75,7 @@ class App extends Component {
                                 <TableCell>생 년 월 일</TableCell>
                                 <TableCell>성 별</TableCell>
                                 <TableCell>직 업</TableCell>
+                                <TableCell>설 정</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -82,6 +83,7 @@ class App extends Component {
                                 this.state.customers.map((c) => {
                                     return (
                                         <Customer
+                                            stateRefresh={this.stateRefresh}
                                             key={c.id}
                                             id={c.id}
                                             image={c.image}
